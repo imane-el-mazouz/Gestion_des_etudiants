@@ -16,12 +16,17 @@
 <body>
 <div class="container-fluid container-fluid-two d-flex flex-column justify-content-centre align-items-center gap-4">
     <h1>Add Student</h1>
-    <form action="StudentController?action=add" method="post">
-        <label for="id">Id:</label> <input type="text" id="id" name="id" required><br>
-        <label for="name">Name:</label> <input type="text" id="name" name="name" required><br>
-        <label for="email">Email:</label> <input type="email" id="email" name="email" required><br>
-        <label for="telephone">Telephone:</label> <input type="text" id="telephone" name="telephone" required><br>
-        <label for="adress">Adress:</label> <input type="text" id="adress" name="adress" required><br>
+        <form action="<c:url value='/saveStudent'/>" method="post">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id"><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br>
+        <label for="telephone">Phone:</label>
+        <input type="text" id="telephone" name="phone"><br>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"><br>
         <input type="submit" value="Add Student">
     </form>
 
