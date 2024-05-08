@@ -117,7 +117,7 @@ public class Student {
         return telephone;
     }
 
-    public void setTelephone() {
+    public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
 

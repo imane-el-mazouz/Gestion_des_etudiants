@@ -25,8 +25,8 @@
         <input type="text" id="email" name="email"><br>
         <label for="telephone">Phone:</label>
         <input type="text" id="telephone" name="telephone"><br>
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address"><br>
+        <label for="adress">Address:</label>
+        <input type="text" id="adress" name="adress"><br>
         <input type="submit" value="Add Student">
     </form>
 
