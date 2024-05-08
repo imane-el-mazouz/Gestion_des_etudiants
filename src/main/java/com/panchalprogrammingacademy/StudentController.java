@@ -79,15 +79,17 @@ public class StudentController {
         return "form_add";
     }
 
-//    public String addStudent(@ModelAttribute Student student) {
-//        boolean alreadyExists = students.stream().anyMatch(s -> s.getEmail().equals(student.getEmail()));
+//    @RequestMapping("/saveStudent")
+//    public String saveStudent(Student student, Model model) {
+//        boolean alreadyExists = students.stream().anyMatch(s -> s.getId().equals(student.getId()));
 //        if (alreadyExists) {
-//            System.out.println("Error: Student with the same email already exists");
+//            model.addAttribute("error", "Error: Student with the same ID already exists");
+//            return "form_add";
 //        } else {
 //            students.add(student);
+//            return "redirect:/students"; // Redirige vers la liste des étudiants par exemple
 //        }
-//        return "redirect:/students";
-//
 //    }
+
 
 }

@@ -16,7 +16,7 @@
 <body>
 <div class="container-fluid container-fluid-two d-flex flex-column justify-content-centre align-items-center gap-4">
     <h1>Add Student</h1>
-        <form action="<c:url value='/saveStudent'/>" method="post">
+    <form action="<c:url value='/saveStudent'/>" method="post">
         <label for="id">ID:</label>
         <input type="text" id="id" name="id"><br>
         <label for="name">Name:</label>
@@ -24,11 +24,12 @@
         <label for="email">Email:</label>
         <input type="text" id="email" name="email"><br>
         <label for="telephone">Phone:</label>
-        <input type="text" id="telephone" name="phone"><br>
+        <input type="text" id="telephone" name="telephone"><br>
         <label for="address">Address:</label>
         <input type="text" id="address" name="address"><br>
         <input type="submit" value="Add Student">
     </form>
+
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
