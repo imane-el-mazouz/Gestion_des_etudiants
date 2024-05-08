@@ -12,24 +12,21 @@ import org.jetbrains.annotations.NotNull;
     public class Student {
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
-        private Long id;
+        private int id;
         @NotNull
-        private String firstName;
-        @NotNull
-        private String lastName;
+        private String name;
         @NotNull
         private String email;
 
         @NotNull
-        private int telephone ;
+        private int telephone;
 
         @NotNull
         private String adress;
 
-        public Student(Long id, @NotNull String firstName, @NotNull String lastName, @NotNull String email, @NotNull int telephone, @NotNull String adress) {
+        public Student(int id, @NotNull String name, @NotNull String email, int telephone, @NotNull String adress) {
             this.id = id;
-            this.firstName = firstName;
-            this.lastName = lastName;
+            this.name = name;
             this.email = email;
             this.telephone = telephone;
             this.adress = adress;
@@ -39,28 +36,20 @@ import org.jetbrains.annotations.NotNull;
 
         }
 
-        public Long getId() {
+        public int getId() {
             return id;
         }
 
-        public void setId(Long id) {
+        public void setId(int id) {
             this.id = id;
         }
 
-        public String getFirstName() {
-            return firstName;
+        public String getName() {
+            return name;
         }
 
-        public void setFirstName(String firstName) {
-            this.firstName = firstName;
-        }
-
-        public String getLastName() {
-            return lastName;
-        }
-
-        public void setLastName(String lastName) {
-            this.lastName = lastName;
+        public void setName(String name) {
+            this.name = name;
         }
 
         public String getEmail() {
@@ -86,7 +75,4 @@ import org.jetbrains.annotations.NotNull;
         public void setAdress(String adress) {
             this.adress = adress;
         }
-
-
-
-}
+    }
