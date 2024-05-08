@@ -44,6 +44,15 @@ public class StudentController {
         return "studentsList";
     }
 
+
+
+    @RequestMapping(value = "/add")
+    //@ResponseBody
+    public String AddStudent(Model model){
+        model.addAttribute("students", students);
+        return "form_add";
+    }
+
 }
 /*
 @RequestMapping(value = "/students")
