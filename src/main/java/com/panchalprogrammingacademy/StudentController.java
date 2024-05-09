@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
@@ -56,7 +57,8 @@ public String listPage(Model model){
     model.addAttribute("students", students);
     return "studentsList";
 }
-*/@Controller
+*/
+@Controller
 public class StudentController {
     private final List<Student> students = new ArrayList<>();
      private final int nextId = 1;
@@ -90,6 +92,8 @@ public class StudentController {
         return "redirect:/allStudent";
     }
 
+
+
     @GetMapping("/update/{id}")
     public String updateStudent(@PathVariable("id") int id, ModelMap modelMap) {
         modelMap.addAttribute("id" , id);
@@ -106,6 +110,33 @@ public class StudentController {
         }
         return "redirect:/allStudent";
     }
+
+
+    @GetMapping("/search/{id}")
+    public String searchStudent(@PathVariable("id") int id, Model model) {
+        Student foundStudent = null;
+        for (Student student : students) {
+            if (student.getId() == id) {
+                foundStudent = student;
+                break;
+            }
+        }
+        if (foundStudent != null) {
+            model.addAttribute("student", foundStudent);
+        } else {
+            model.addAttribute("errorMessage", "Student with ID " + id + " not found.");
+        }
+        return "studentDetails";
+    }
+
+
+//    @RequestMapping("search{id}")
+//    public ModelAndView Search(@RequestParam("searchTerm") int id) {
+//        return new ModelAndView("/Search", "studentsList", service.Search(id));
+//
+//    }
+
+
 }
 
 

@@ -1,3 +1,5 @@
+
+
 <%@ page import="com.panchalprogrammingacademy.Student" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -14,39 +16,34 @@
     -->
 </head>
 <body>
-<div class="container-fluid container-fluid-two d-flex flex-column justify-content-centre align-items-center gap-4">
-    <h1>Students List</h1>
-    <table class="table">
-        <thead>
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone Number</th>
-            <th>Address</th>
-            <th>Action</th>
-        </tr>
-        </thead>
-        <tbody>
-        <c:forEach var="student" items="${students}">
+<div class="container">
+    <h1>Student Details</h1>
+    <c:if test="${not empty student}">
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Adress</th>
+            </tr>
             <tr>
                 <td>${student.id}</td>
                 <td>${student.name}</td>
                 <td>${student.email}</td>
                 <td>${student.telephone}</td>
                 <td>${student.adress}</td>
-                <td>
-                    <button><a href="${pageContext.request.contextPath}/delete/${student.id}">Delete</a></button>
-                    <button><a href="${pageContext.request.contextPath}/update/${student.id}">Update</a> </button>
-                </td>
             </tr>
-        </c:forEach>
-        </tbody>
-    </table>
-    <button><a href="${pageContext.request.contextPath}/saveStudent">Add</a> </button>
-    <!-- <button><a href="${pageContext.request.contextPath}/search">Search</a> </button> -->
-
-</div>
+        </table>
+    </c:if>
+    <c:if test="${empty student}">
+        <p>Student not found</p>
+    </c:if>
+    <br>
+    <a href="<c:url value='/allStudent'/>">Back to Student List</a>
+    </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
