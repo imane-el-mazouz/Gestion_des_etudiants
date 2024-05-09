@@ -51,7 +51,7 @@
 <header class="header" data-header>
     <div class="container">
         <div class="overlay" data-overlay></div>
-        <a href="studentsList.jsp" class="logo"></a>
+        <a href="allStudent" class="logo"></a>
         <div class="header-actions">
             <button class="search-btn">
                 <ion-icon name="search-outline"></ion-icon>
@@ -63,7 +63,7 @@
         <nav class="navbar" data-navbar>
             <div class="navbar-top">
                 <a href="movies" class="logo">
-                    <img src="images/logo.png" alt="Cinema LOgo">
+                    <img src="webapp/images/logo.png" alt="Cinema LOgo">
                 </a>
                 <button class="menu-close-btn" data-menu-close-btn>
                     <ion-icon name="close-outline"></ion-icon>
@@ -71,7 +71,7 @@
             </div>
             <ul class="navbar-list">
                 <li>
-                    <a href="studentsList.jsp" class="navbar-link">Movies</a>
+                    <a href="saveStudent" class="navbar-link">Students List</a>
                 </li>
             </ul>
 
@@ -107,17 +107,12 @@
 </header>
 <main>
     <article>
-        <section class="hero" style="background: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAyL2xhdXJhc3RlZmFubzI2Nl9jbG9zZS11cF9zaG90X3Bob3RvZ3JhcGh5X29mX2NpbmVtYV90aGVhdGVyX3JlYV80NTA2NzkxZS04ZGI5LTQ1OTUtODdjYS1lNmNmNzM2NTRiOTVfMS5qcGc.jpg) no-repeat;  background-size: cover;background-position: center;min-height: 750px;height: 100vh;max-height: 1000px;display: flex;justify-content: flex-start;align-items: center;padding-block: var(--section-padding);">
+        <section class="hero" style="background: url(https://www.lecoindesentrepreneurs.fr/wp-content/uploads/2021/03/Automatisation-gestion-dentreprise.png) no-repeat;  background-size: cover;background-position: center;min-height: 750px;height: 100vh;max-height: 1000px;display: flex;justify-content: flex-start;align-items: center;padding-block: var(--section-padding);">
             <div class="container">
 
                 <div class="hero-content">
 
-                    <p class="hero-subtitle">Megarama Cinema</p>
-
-                    <h1 class="h1 hero-title">
-                        Best <strong>Movie</strong>, TVs Shows, & More.
-                    </h1>
-
+                    <p class="hero-subtitle">student management</p>
                     <button class="btn btn-primary">
                         <ion-icon name="play"></ion-icon>
 
@@ -128,61 +123,6 @@
 
             </div>
         </section>
-
-        <!--
-        - #UPCOMING
-      -->
-
-        <section class="upcoming">
-            <div class="container">
-
-                <div class="flex-wrapper">
-
-                    <div class="title-wrapper">
-                        <p class="section-subtitle">Online Streaming</p>
-
-                        <h2 class="h2 section-title">Upcoming Movies</h2>
-                    </div>
-                </div>
-
-                <ul class="movies-list  has-scrollbar">
-
-                    <li>
-                        <div class="movie-card">
-                             <figure class="card-banner">
-                                    <img src="./assets/images/upcoming-1.png" alt="The Northman movie poster">
-                                </figure>
-                            </a>
-
-                            <div class="title-wrapper">
-                                <a href="./movie-details.html">
-                                    <h3 class="card-title">The Northman</h3>
-                                </a>
-
-                                <time datetime="2022">2022</time>
-                            </div>
-
-                            <div class="card-meta">
-                                <div class="badge badge-outline">HD</div>
-
-                                <div class="duration">
-                                    <ion-icon name="time-outline"></ion-icon>
-
-                                    <time datetime="PT137M">137 min</time>
-                                </div>
-
-                                <div class="rating">
-                                    <ion-icon name="star"></ion-icon>
-
-                                    <data>8.5</data>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
 <footer class="footer">
     <div class="footer-top">
         <div class="container">
@@ -243,24 +183,7 @@
     <ion-icon name="chevron-up"></ion-icon>
 </a>
 
-            <script>
-                function showPanier() {
-                    //document.getElementById('idDeleteCategorie').value = categorieId;
-                    document.getElementById('PanierModal').style.display = 'block';
-                }
-
-                function closeDeleteForm() {
-                    document.getElementById('PanierModal').style.display = 'none';
-                }
-
-            </script>
-            <!--
-              - custom js link
-            -->
             <script src="JS/script.js"></script>
-            <!--
-              - ionicon link
-            -->
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
             <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
