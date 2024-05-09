@@ -59,7 +59,7 @@ public String listPage(Model model){
 */@Controller
 public class StudentController {
     private final List<Student> students = new ArrayList<>();
-    private int nextId = 1;
+     private final int nextId = 1;
 
     @PostConstruct
     public void init() {
@@ -67,17 +67,53 @@ public class StudentController {
         students.add(new Student(2, "imane", "imane@gmail.com", "060908775", "Agadir"));
     }
 
-    @RequestMapping(value = "/")
+    @RequestMapping(value = "/allStudent")
     public String listPage(Model model) {
         model.addAttribute("students", students);
         return "studentsList";
     }
 
-    @RequestMapping("/saveStudent")
+    @GetMapping("/saveStudent")
     public String saveStudent( Student student) {
         students.add(student);
         return "form_add";
     }
+    @PostMapping("/saveStudent")
+    public String addStudent(@ModelAttribute Student student) {
+        students.add(student);
+        return "redirect:/allStudent";
+    }
+
+    @GetMapping("/delete/{id}")
+    public String deleteStudent(@PathVariable("id") int id) {
+        students.removeIf(student -> student.getId() == id);
+        return "redirect:/allStudent";
+    }
+
+
+    @GetMapping("/update")
+    public String updateStudent(@ModelAttribute Student updatedStudent) {
+//        for (Student student : students) {
+//            if (student.getId() == updatedStudent.getId()) {
+//                student.setName(updatedStudent.getName());
+//                student.setEmail(updatedStudent.getEmail());
+//                student.setTelephone(updatedStudent.getTelephone());
+//                student.setAdress(updatedStudent.getAdress());
+//                break;
+//            }
+//        }
+//        return "redirect:/allStudent";
+        for (int i = 0; i < students.size(); i++) {
+            if (students.get(i).getId() == updatedStudent.getId()) {
+                students.set(i, updatedStudent);
+                break;
+            }
+        }
+        return "redirect:/allStudent";
+    }
+}
+
+
 
 //    @RequestMapping("/saveStudent")
 //    public String saveStudent(Student student, Model model) {
@@ -90,6 +126,3 @@ public class StudentController {
 //            return "redirect:/students"; // Redirige vers la liste des étudiants par exemple
 //        }
 //    }
-
-
-}

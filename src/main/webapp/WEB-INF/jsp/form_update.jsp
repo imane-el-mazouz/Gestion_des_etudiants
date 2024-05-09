@@ -15,34 +15,23 @@
 </head>
 <body>
 <div class="container-fluid container-fluid-two d-flex flex-column justify-content-centre align-items-center gap-4">
-    <h1>Students List</h1>
-    <table class="table">
-        <thead>
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone Number</th>
-            <th>Address</th>
-            <th>Action</th>
-        </tr>
-        </thead>
-        <tbody>
-        <c:forEach var="student" items="${students}">
-            <tr>
-                <td>${student.id}</td>
-                <td>${student.name}</td>
-                <td>${student.email}</td>
-                <td>${student.telephone}</td>
-                <td>${student.adress}</td>
-                <td>
-                    <button><a href="${pageContext.request.contextPath}/delete/${student.id}">Delete</a></button>
-                    <button>Update</button>
-                </td>
-            </tr>
-        </c:forEach>
-        </tbody>
-    </table>
+    <h1>Add Student</h1>
+    <form action="<c:url value='/update'/>" method="post">
+        <label for="updateId">ID:</label>
+        <input type="text" id="updateId" name="id" required><br>
+        <label for="updateName">Name:</label>
+        <input type="text" id="updateName" name="name" required><br>
+        <label for="updateEmail">Email:</label>
+        <input type="text" id="updateEmail" name="email" required><br>
+        <label for="updatePhone">Phone:</label>
+        <input type="text" id="updatePhone" name="telephone" required><br>
+        <label for="updateAddress">Address:</label>
+        <input type="text" id="updateAddress" name="adress" required><br>
+        <input type="submit" value="Update">
+
+    </form>
+
+
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
