@@ -37,12 +37,14 @@
                 <td>${student.adress}</td>
                 <td>
                     <button><a href="${pageContext.request.contextPath}/delete/${student.id}">Delete</a></button>
-                    <button>Update</button>
+                    <button><a href="${pageContext.request.contextPath}/update/${student.id}">Update</a> </button>
                 </td>
             </tr>
         </c:forEach>
         </tbody>
     </table>
+    <button><a href="${pageContext.request.contextPath}/saveStudent">Add</a> </button>
+
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

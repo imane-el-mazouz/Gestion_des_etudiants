@@ -74,8 +74,8 @@ public class StudentController {
     }
 
     @GetMapping("/saveStudent")
-    public String saveStudent( Student student) {
-        students.add(student);
+    public String saveStudent(ModelMap modelMap) {
+        modelMap.addAttribute("students", new Student());
         return "form_add";
     }
     @PostMapping("/saveStudent")
@@ -90,19 +90,14 @@ public class StudentController {
         return "redirect:/allStudent";
     }
 
+    @GetMapping("/update/{id}")
+    public String updateStudent(@PathVariable("id") int id, ModelMap modelMap) {
+        modelMap.addAttribute("id" , id);
+        return "form_update";
+    }
 
-    @GetMapping("/update")
-    public String updateStudent(@ModelAttribute Student updatedStudent) {
-//        for (Student student : students) {
-//            if (student.getId() == updatedStudent.getId()) {
-//                student.setName(updatedStudent.getName());
-//                student.setEmail(updatedStudent.getEmail());
-//                student.setTelephone(updatedStudent.getTelephone());
-//                student.setAdress(updatedStudent.getAdress());
-//                break;
-//            }
-//        }
-//        return "redirect:/allStudent";
+    @PostMapping("/update/{id}")
+    public String saveStudent(@ModelAttribute Student updatedStudent) {
         for (int i = 0; i < students.size(); i++) {
             if (students.get(i).getId() == updatedStudent.getId()) {
                 students.set(i, updatedStudent);

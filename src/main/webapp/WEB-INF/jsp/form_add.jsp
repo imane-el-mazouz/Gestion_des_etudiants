@@ -15,25 +15,19 @@
 </head>
 <body>
 <div class="container">
-    <h1>Update Student</h1>
-    <form action="<c:url value='/update'/>" method="post">
-        <input type="hidden" name="id" value="${student.id}">
+    <h1>Add Student</h1>
+    <form action="<c:url value='/saveStudent'/>" method="post">
+        <label for="name">Id:</label>
+        <input type="text" name="id" value="${student.id}"><br>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" value="${student.name}"><br>
         <label for="email">Email:</label>
         <input type="text" id="email" name="email" value="${student.email}"><br>
         <label for="telephone">Phone:</label>
-<<<<<<< HEAD
         <input type="text" id="telephone" name="telephone" value="${student.telephone}"><br>
         <label for="adress">Address:</label>
         <input type="text" id="adress" name="adress" value="${student.adress}"><br>
-        <input type="submit" value="Update Student">
-=======
-        <input type="text" id="telephone" name="telephone"><br>
-        <label for="adress">Address:</label>
-        <input type="text" id="adress" name="adress"><br>
         <input type="submit" value="Add Student">
->>>>>>> 93e48ecd0843d9694de0458db39cb5441b4670d1
     </form>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

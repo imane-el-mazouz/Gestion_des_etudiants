@@ -15,10 +15,10 @@
 </head>
 <body>
 <div class="container-fluid container-fluid-two d-flex flex-column justify-content-centre align-items-center gap-4">
-    <h1>Add Student</h1>
-    <form action="<c:url value='/update'/>" method="post">
+    <h1>Update Student</h1>
+    <form action="${pageContext.request.contextPath}/update/${id}" method="post">
         <label for="updateId">ID:</label>
-        <input type="text" id="updateId" name="id" required><br>
+        <input type="text" id="updateId" name="id"  value = ${id}><br>
         <label for="updateName">Name:</label>
         <input type="text" id="updateName" name="name" required><br>
         <label for="updateEmail">Email:</label>
