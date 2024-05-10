@@ -217,7 +217,6 @@
 
         }
 
-
         .nav {
             position: fixed;
             width: 100%;
@@ -276,7 +275,7 @@
 
 
         header {
-            background-image: url(https://i.pinimg.com/564x/c6/2a/59/c62a592a169a0cef9140c52081ab28af.jpg) ;background-size: cover;background-position: center;min-height: 750px;height: 100vh;max-height: 1000px;display: flex;justify-content: flex-start;align-items: center;padding-block: var(--section-padding);background-repeat: no-repeat;
+            background-image: url(https://images.pexels.com/photos/8297478/pexels-photo-8297478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;background-size: cover;background-position: center;min-height: 750px;height: 100vh;max-height: 1000px;display: flex;justify-content: flex-start;align-items: center;padding-block: var(--section-padding);background-repeat: no-repeat;
         ");
             background-size: cover;
             text-align: center;
@@ -483,6 +482,7 @@
     <div class="section__container">
         <h1>Welcome to DiligentCampus </h1>
         <p>Your Dream Campus</p>
+        <a href="" style="display: inline-block;padding: 10px 20px;background-color: blue;color: #fff;text-decoration: none;border-radius: 5px;transition: background-color 0.3s ease;">Discover More</a>
     </div>
 </header>
 
