@@ -490,6 +490,7 @@
     <div class="section__container">
         <h2>Our Campus</h2>
         <h2>Our Campus</h2>
+        <h2>Our Campus</h2>
         <p>"DiligentCampus i is an advanced platform tailored to simplify student management within campus environments. It offers intuitive features enabling students to efficiently track schedules, manage courses, stay updated on campus events, and foster seamless communication with peers and faculty. With a focus on fostering diligence and organization, DiligentCampus is dedicated to empowering students towards academic excellence and enhancing their overall campus experience.</p>
     </div>
 </section>
