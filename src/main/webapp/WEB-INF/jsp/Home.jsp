@@ -437,6 +437,7 @@
             background-color: #f8f9fa;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: blue;
         }
 
         .card img {
@@ -537,7 +538,7 @@
     <div class="section__container">
         <h2>Our Campus</h2>
         <p>"DiligentCampus is an advanced platform tailored to simplify student management within campus environments. It offers intuitive features enabling students to efficiently track schedules, manage courses, stay updated on campus events, and foster seamless communication with peers and faculty. With a focus on fostering diligence and organization, DiligentCampus is dedicated to empowering students towards academic excellence and enhancing their overall campus experience.</p>
-    </div>!
+    </div>
 </section>
 <section id="news">
     <div class="section__container">
@@ -556,11 +557,10 @@
             </div>
             <div class="card">
                 <img src="https://images.pexels.com/photos/6956127/pexels-photo-6956127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="background-size: cover;background-position: center;height: 350px;" alt="Club 1">
-                <h3>Entrepreneurship Club</h3>
+                <h3>Entrep Club</h3>
                 <button type="submit">Join</button>
             </div>
         </div>
-        <button type="submit">Join a club </button>
 
     </div>
 </section>
@@ -568,6 +568,14 @@
     <div class="section__container">
         <h2>Upcoming Events </h2>
         <p>Stay updated on all the exciting events happening on campus through our comprehensive events calendar. From academic seminars to cultural festivals, there's always something happening to enrich your college experience.</p>
+        <div class="card__container">
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/85/b1/73/85b1731f45fa2041cb476239f527a645.jpg" style="background-size: cover;background-position: center;height: 350px;" alt="Club 1">
+                <h3>Sprts Club</h3>
+                <button type="submit">Reserve your ticket</button>
+
+            </div>
+        </div>
 
     </div>
 </section>
