@@ -275,7 +275,7 @@
 
 
         header {
-            background-image: url(https://images.pexels.com/photos/8297478/pexels-photo-8297478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;background-size: cover;background-position: center;min-height: 750px;height: 100vh;max-height: 1000px;display: flex;justify-content: flex-start;align-items: center;padding-block: var(--section-padding);background-repeat: no-repeat;
+            background-image: url(https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;background-size: cover;background-position: center;min-height: 750px;height: 100vh;max-height: 1000px;display: flex;justify-content: flex-start;align-items: center;padding-block: var(--section-padding);background-repeat: no-repeat;
         ");
             background-size: cover;
             text-align: center;
@@ -286,7 +286,7 @@
             font-size: 48px;
             font-weight: 700;
             margin-bottom: 20px;
-            color: #FFD700;
+            color: blue;
         }
 
         header p {
@@ -417,6 +417,55 @@
         .footer__links li a:hover {
             color: blue;
         }
+
+        <!--
+        .section__container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .card__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+        }
+
+        .card button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #0056b3;
+        }
+        -->
         @media (max-width: 768px) {
             .nav__menu__btn {
                 display: block;
@@ -458,8 +507,7 @@
     <div class="nav__bar">
         <div class="nav__header">
             <div class="logo nav__logo">
-                <div>H</div>
-                <span>Sunset Paradise<br />Hotel</span>
+                <span>Diligent Campus</span>
             </div>
             <div class="nav__menu__btn" id="menu-btn">
                 <i class="ri-menu-line"></i>
@@ -488,15 +536,30 @@
 <section id="room">
     <div class="section__container">
         <h2>Our Campus</h2>
-        <h2>Our Campus</h2>
-        <h2>Our Campus</h2>
-        <p>"DiligentCampus i is an advanced platform tailored to simplify student management within campus environments. It offers intuitive features enabling students to efficiently track schedules, manage courses, stay updated on campus events, and foster seamless communication with peers and faculty. With a focus on fostering diligence and organization, DiligentCampus is dedicated to empowering students towards academic excellence and enhancing their overall campus experience.</p>
-    </div>
+        <p>"DiligentCampus is an advanced platform tailored to simplify student management within campus environments. It offers intuitive features enabling students to efficiently track schedules, manage courses, stay updated on campus events, and foster seamless communication with peers and faculty. With a focus on fostering diligence and organization, DiligentCampus is dedicated to empowering students towards academic excellence and enhancing their overall campus experience.</p>
+    </div>!
 </section>
 <section id="news">
     <div class="section__container">
         <h2>Our Clubs</h2>
         <p>Explore the diverse range of clubs and student organizations available on campus. From academic and cultural clubs to sports and recreational groups, there's something for everyone.</p>
+        <div class="card__container">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/5467332/pexels-photo-5467332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="background-size: cover;background-position: center;height: 350px;" alt="Club 1">
+                <h3>Sprts Club</h3>
+                <button type="submit">Join</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/31/1e/d4/311ed44a40b7e15bd9556dd982cce514.jpg" style="background-size: cover;background-position: center;height: 350px;" alt="Club 2">
+                <h3>Art Club</h3>
+                <button type="submit">Join</button>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/6956127/pexels-photo-6956127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="background-size: cover;background-position: center;height: 350px;" alt="Club 1">
+                <h3>Entrepreneurship Club</h3>
+                <button type="submit">Join</button>
+            </div>
+        </div>
         <button type="submit">Join a club </button>
 
     </div>
