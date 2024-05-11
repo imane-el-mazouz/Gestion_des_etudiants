@@ -254,8 +254,8 @@
     <div class="nav__bar">
         <div class="nav__header">
             <div class="logo nav__logo">
-                <div>H</div>
-                <span>Sunset Paradise<br />Hotel</span>
+                <div>D</div>
+                <span>DiligentCampus</span>
             </div>
             <div class="nav__menu__btn" id="menu-btn">
                 <i class="ri-menu-line"></i>
