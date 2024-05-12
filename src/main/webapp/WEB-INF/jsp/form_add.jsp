@@ -266,7 +266,6 @@
             <li><a href="#menu">Events</a></li>
             <li><a href="#news">Contact</a></li>
             <li><a href="saveStudent">Save</a></li>
-            <li><a href="update">Update</a></li>
 
         </ul>
     </div>

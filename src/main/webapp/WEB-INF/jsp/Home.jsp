@@ -286,7 +286,7 @@
             font-size: 48px;
             font-weight: 700;
             margin-bottom: 20px;
-            color: blue;
+            color: white;
         }
 
         header p {
@@ -466,6 +466,47 @@
         .card button:hover {
             background-color: #0056b3;
         }
+        .card-header {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            background-color: #e0e0e0;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: blue;
+        }
+
+        button.btn-success {
+            background-color: blue;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button.btn-success:hover {
+            background-color: #3498db;
+        }
+
+        .text-center {
+            text-align: center;
+            margin-top: 20px;
+        }
         -->
         @media (max-width: 768px) {
             .nav__menu__btn {
@@ -538,8 +579,21 @@
     <div class="section__container">
         <h2>Our Campus</h2>
         <p>"DiligentCampus is an advanced platform tailored to simplify student management within campus environments. It offers intuitive features enabling students to efficiently track schedules, manage courses, stay updated on campus events, and foster seamless communication with peers and faculty. With a focus on fostering diligence and organization, DiligentCampus is dedicated to empowering students towards academic excellence and enhancing their overall campus experience.</p>
+                <div class="card__container">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/564x/a9/3f/45/a93f45071cf49e828b4dafb7ab763fa2.jpg" style="background-size: cover;background-position: center;height: 350px;" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="https://i.pinimg.com/564x/74/79/1e/74791ea71f360b1bbfaffe7109481d8d.jpg" style="background-size: cover;background-position: center;height: 350px;" alt="">
+                    </div>
+                        <div class="card">
+                            <img src="https://i.pinimg.com/564x/97/44/76/974476778413b6f808a8166b3754a396.jpg" style="background-size: cover;background-position: center;height: 350px;" alt="">
+                        </div>
+                </div>
     </div>
 </section>
+
+
 <section id="news">
     <div class="section__container">
         <h2>Our Clubs</h2>
@@ -571,7 +625,16 @@
         <div class="card__container">
             <div class="card">
                 <img src="https://i.pinimg.com/564x/85/b1/73/85b1731f45fa2041cb476239f527a645.jpg" style="background-size: cover;background-position: center;height: 350px;" alt="Club 1">
-                <h3>Sprts Club</h3>
+                <button type="submit">Reserve your ticket</button>
+
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/85/b1/73/85b1731f45fa2041cb476239f527a645.jpg" style="background-size: cover;background-position: center;height: 350px;" alt="Club 1">
+                <button type="submit">Reserve your ticket</button>
+
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/85/b1/73/85b1731f45fa2041cb476239f527a645.jpg" style="background-size: cover;background-position: center;height: 350px;" alt="Club 1">
                 <button type="submit">Reserve your ticket</button>
 
             </div>
@@ -580,10 +643,49 @@
     </div>
 </section>
 <section id="menu">
-    <div class="section__container">
+    <div class="section__container"style="width: 300px">
         <h2>Contact</h2>
-        <p>Find contact information for various administrative offices including admissions, registrar, financial aid, and student services. Get assistance with enrollment, financial matters, and other administrative needs..</p>
-        <button type="submit">Contact Us</button>
+        <div class="container mt-5">
+            <div class="card bg-primary text-white">
+                <div class="card-header">
+                    <h3 class="card-title">Get in Touch</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company:</label>
+                            <input type="text" class="form-control" id="company" placeholder="Enter your company">
+                        </div>
+                        <div class="form-group">
+                            <label for="interestedIn">Interested In:</label>
+                            <select class="form-control" id="interestedIn">
+                                <option value="">Select an option</option>
+                                <option value="product">Product</option>
+                                <option value="service">Service</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">SEND</button>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <p class="text-center">We'll be in touch shortly!</p>
+                </div>
+            </div>
+        </div>
 
     </div>
 </section>
