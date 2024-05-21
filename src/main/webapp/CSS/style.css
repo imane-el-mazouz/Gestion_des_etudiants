@@ -117,9 +117,75 @@ body {
 
 */
 
+.contact_section {
+    position: relative;
+    background-color: blue;
+    color: white;
+
+    .heading_container {
+        justify-content: start;
+
+        h2 {
+            &::before {
+                text-align: left;
+                left: 0;
+                transform: none;
+            }
+        }
+    }
+
+    .row {
+        align-items: center;
+    }
+
+    .img-box {
+        img {
+            width: 100%;
+        }
+    }
+
+
+
+    .form_container {
+        padding: 45px 0 45px 15px;
+
+    }
+
+    form {}
+
+    input {
+        width: 100%;
+        border: none;
+        background-color: white;
+        outline: none;
+        color: blue;
+        margin-top: 25px;
+        padding: 12px;
+
+        &::placeholder {
+            color: blue;
+        }
+
+        &.message-box {
+            padding: 45px 12px;
+        }
+    }
+
+    button {
+        padding: 10px 65px;
+        outline: none;
+        border: none;
+        color: blue;
+        background: white;
+        margin: 45px 0 0 auto;
+        text-transform: uppercase;
+    }
+
+}
+
 /*style actors secction*/
 .container-actors{
-    background-image: url("../images/footer-bg.jpg");
+    background-image: url("https://i.pinimg.com/564x/41/fa/a3/41faa3508a7b1210a03d8b6265ed7848.jpg");
     padding: 0;
 }
 

@@ -278,11 +278,11 @@
         <label for="updateId">ID:</label>
         <input type="text" id="updateId" name="id"  value = ${id}><br>
         <label for="updateName">Name:</label>
-        <input type="text" id="updateName" name="name" required><br>
+        <input type="text" id="updateName" name="name" value=${name}><br>
         <label for="updateEmail">Email:</label>
-        <input type="text" id="updateEmail" name="email" required><br>
+        <input type="text" id="updateEmail" name="email" required value =${email} ><br>
         <label for="updatePhone">Phone:</label>
-        <input type="text" id="updatePhone" name="telephone" required><br>
+        <input type="text" id="updatePhone" name="telephone" required ><br>
         <label for="updateAddress">Address:</label>
         <input type="text" id="updateAddress" name="adress" required><br>
         <input type="submit" value="Update">

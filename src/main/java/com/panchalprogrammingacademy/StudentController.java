@@ -97,6 +97,7 @@ public class StudentController {
     @GetMapping("/update/{id}")
     public String updateStudent(@PathVariable("id") int id, ModelMap modelMap) {
         modelMap.addAttribute("id" , id);
+        //modelMap.addAttribute("name", student.getName());
         return "form_update";
     }
 
@@ -111,8 +112,8 @@ public class StudentController {
         return "redirect:/allStudent";
     }
 
-
-    @GetMapping("/search/{id}")
+/*
+   @GetMapping("/search/{id}")
     public String searchStudent(@PathVariable("id") int id, Model model) {
         Student foundStudent = null;
         for (Student student : students) {
@@ -124,11 +125,11 @@ public class StudentController {
         if (foundStudent != null) {
             model.addAttribute("student", foundStudent);
         } else {
-            model.addAttribute("errorMessage", "Student with ID " + id + " not found.");
+            model.a-ddAttribute("errorMessage", "Student with ID " + id + " not found.");
         }
         return "studentDetails";
     }
-
+*/
 
 //    @RequestMapping("search{id}")
 //    public ModelAndView Search(@RequestParam("searchTerm") int id) {

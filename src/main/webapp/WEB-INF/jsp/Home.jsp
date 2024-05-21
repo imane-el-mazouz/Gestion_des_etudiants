@@ -272,10 +272,8 @@
             color: #FFD700;
         }
 
-
-
         header {
-            background-image: url(https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;background-size: cover;background-position: center;min-height: 750px;height: 100vh;max-height: 1000px;display: flex;justify-content: flex-start;align-items: center;padding-block: var(--section-padding);background-repeat: no-repeat;
+            background-image: url(https://architecturestudio.fr/wp-content/uploads/2021/07/architecturestudio_BGR1_2-1-2200x1238.jpg) ;background-size: cover;background-position: center;min-height: 750px;height: 100vh;max-height: 1000px;display: flex;justify-content: flex-start;align-items: center;padding-block: var(--section-padding);background-repeat: no-repeat;
         ");
             background-size: cover;
             text-align: center;
@@ -315,8 +313,6 @@
             line-height: 1.6;
             color: #666;
         }
-
-
 
         #room {
             background-color: #f9f9f9;
@@ -549,11 +545,10 @@
     <div class="nav__bar">
         <div class="nav__header">
             <div class="logo nav__logo">
-                <span>Diligent Campus</span>
+                <div>D</div>
+                <span>DiligentCampus</span>
             </div>
-            <div class="nav__menu__btn" id="menu-btn">
-                <i class="ri-menu-line"></i>
-            </div>
+
         </div>
         <ul class="nav__links" id="nav-links">
             <li><a href="#Home">Home</a></li>
@@ -593,7 +588,6 @@
     </div>
 </section>
 
-
 <section id="news">
     <div class="section__container">
         <h2>Our Clubs</h2>
@@ -601,18 +595,18 @@
         <div class="card__container">
             <div class="card">
                 <img src="https://images.pexels.com/photos/5467332/pexels-photo-5467332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="background-size: cover;background-position: center;height: 350px;" alt="Club 1">
-                <h3>Sprts Club</h3>
-                <button type="submit">Join</button>
+                <h3>Sports Club</h3>
+                <button type="submit">Join Us</button>
             </div>
             <div class="card">
                 <img src="https://i.pinimg.com/564x/31/1e/d4/311ed44a40b7e15bd9556dd982cce514.jpg" style="background-size: cover;background-position: center;height: 350px;" alt="Club 2">
                 <h3>Art Club</h3>
-                <button type="submit">Join</button>
+                <button type="submit">Join Us</button>
             </div>
             <div class="card">
-                <img src="https://images.pexels.com/photos/6956127/pexels-photo-6956127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="background-size: cover;background-position: center;height: 350px;" alt="Club 1">
+                <img src="https://i.pinimg.com/564x/ec/9e/f0/ec9ef032af6b5b9d65e2f91e52ce9320.jpg" style="background-size: cover;background-position: center;height: 350px;" alt="Club 3">
                 <h3>Entrep Club</h3>
-                <button type="submit">Join</button>
+                <button type="submit">Join Us</button>
             </div>
         </div>
 
@@ -629,12 +623,12 @@
 
             </div>
             <div class="card">
-                <img src="https://i.pinimg.com/564x/85/b1/73/85b1731f45fa2041cb476239f527a645.jpg" style="background-size: cover;background-position: center;height: 350px;" alt="Club 1">
+                <img src="https://i.pinimg.com/564x/06/30/e6/0630e63a37d7ef817f4705d1627bd89d.jpg" style="background-size: cover;background-position: center;height: 350px;" alt="Club 1">
                 <button type="submit">Reserve your ticket</button>
 
             </div>
             <div class="card">
-                <img src="https://i.pinimg.com/564x/85/b1/73/85b1731f45fa2041cb476239f527a645.jpg" style="background-size: cover;background-position: center;height: 350px;" alt="Club 1">
+                <img src="https://i.pinimg.com/564x/d5/f5/f5/d5f5f50d8e08355721216581d1cc084e.jpg" style="background-size: cover;background-position: center;height: 350px;" alt="Club 1">
                 <button type="submit">Reserve your ticket</button>
 
             </div>
@@ -642,53 +636,36 @@
 
     </div>
 </section>
-<section id="menu">
-    <div class="section__container"style="width: 300px">
-        <h2>Contact</h2>
-        <div class="container mt-5">
-            <div class="card bg-primary text-white">
-                <div class="card-header">
-                    <h3 class="card-title">Get in Touch</h3>
-                </div>
-                <div class="card-body">
+<!-- contact section -->
+<section class="contact_section ">
+    <h2>Contact Us</h2>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 col-md-6">
+                <div class="form_container pr-0 pr-lg-5 mr-0 mr-lg-2" >
+
                     <form>
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        <div>
+                            <input type="text" placeholder="Name" />
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        <div>
+                            <input type="email" placeholder="Email" />
                         </div>
-                        <div class="form-group">
-                            <label for="company">Company:</label>
-                            <input type="text" class="form-control" id="company" placeholder="Enter your company">
+                        <div>
+                            <input type="text" placeholder="Phone Number" />
                         </div>
-                        <div class="form-group">
-                            <label for="interestedIn">Interested In:</label>
-                            <select class="form-control" id="interestedIn">
-                                <option value="">Select an option</option>
-                                <option value="product">Product</option>
-                                <option value="service">Service</option>
-                                <option value="partnership">Partnership</option>
-                                <option value="other">Other</option>
-                            </select>
+                        <div>
+                            <input type="text" class="message-box" placeholder="Message" />
                         </div>
-                        <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-success">SEND</button>
+                        <button type="submit" style="display: flex ; justify-content: center">send</button>
                     </form>
-                </div>
-                <div class="card-footer">
-                    <p class="text-center">We'll be in touch shortly!</p>
                 </div>
             </div>
         </div>
-
     </div>
 </section>
+
 
 <footer>
     <div class="footer__container">
